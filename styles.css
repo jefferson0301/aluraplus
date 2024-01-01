@@ -1,0 +1,244 @@
+
+
+:root{
+    --branco-principal: #ffffff;
+    --cinza-secundario: #C0C0C0;
+    --botao-azul: #167BF7;
+    --cor-de-fundo: #00030C;
+    --fonte-principal: 'Inter';
+    --botao-azul-efeito: #3c92fa ;
+}
+
+body{
+    background-color: var(--cor-de-fundo); 
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;  
+}
+
+h1{
+    color: var(--branco-principal);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.principal{
+    background-image: url("./img/Background.png");
+    background-repeat: no-repeat ;/*não repetir a imagem*/
+    background-size: contain;/*preenche todo o container no caso toda a seção*/
+    align-items: center;
+    text-align: center; 
+}
+
+.container__caixa{
+    margin: 0 6em;
+}
+
+.container__titulo{
+    font-size: 28px;
+    height: 700;
+}
+
+.container__imagem{
+    margin: 1em 0 2em 0;
+}
+
+.container__botao{
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block;
+    text-decoration: none;
+    /* width: 25%; */
+    margin-bottom: 1em;
+}
+
+.container__botao:hover{
+    background-color: var(--botao-azul-efeito);
+    color: var(--cor-de-fundo);
+}
+
+
+.botao_secundario{
+    background-color: transparent; /*deixa uma cor transparente*/
+    border: 2px solid var(--branco-principal);
+}
+
+.container__aviso{
+    font-size: 12px ;
+    color: var(--cinza-secundario);
+}
+
+/*segunda pagina*/
+
+.secundario{
+    align-items: center;
+    margin: 0 6em;
+}
+
+.imagem__secundaria{
+    width: 80%;
+}
+
+.descricao__titulo{
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--branco-principal);
+    margin-bottom: 0.1em;
+}
+
+.descricao__texto{
+    color: var(--cinza-secundario);
+}
+
+.secundario__botao{
+    display: inline-block; /*elemento ocuupa somento o espaço que ele deve ocupar*/
+    margin-top: 1em;
+}
+
+.container__descricao{
+    padding: 2em;
+}
+
+/*parte 4*/
+
+/*
+Solução feita por mim (deu certo) 
+.container__quatro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.container__quatro__titulo{
+    text-align: center  ;
+}
+
+.descricao__itens{
+    text-align: center;
+    color: var(--branco-principal);
+} */
+
+.dispositivos{
+    text-align: center;
+}
+
+.dispositivos__titulo{
+    color: var(--branco-principal);
+    text-align: center;
+    font-size: 40px;
+}
+
+.dispositivos__lista{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    margin: 5em 0;
+}
+
+.lista__item{
+    color: var(--branco-principal);
+    text-align: center;
+    font-size: 32px;
+}
+
+/*Footer*/
+/* 
+Solução proposta por mim (deu certo)
+.footer{
+    width: 100%;
+    font-size: 35.28px;
+    color: var(--branco-principal);
+    margin-bottom: 2em;
+}
+
+.footer__titulo{
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+.footer__lista{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__lista__item{
+    font-size: 16px;
+    list-style: none;
+    margin: 0 0.4em;
+}
+
+.footer__descricao{
+    font-size: 14px;
+    text-align: center;
+    margin: 1em ;
+} */
+
+/*Footer*/
+
+.rodape{
+    color: var(--branco-principal);
+    text-align: center;
+    margin: 3em 0;
+}
+
+.rodape__logo{
+    margin: 1em 0;
+}
+
+
+.rodape__lista{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    margin: 1em 0;
+}
+
+.lista__link{
+    list-style: none;
+
+}
+
+
+.lista__link a{
+    color: var(--branco-principal);
+    text-decoration: none;
+}
+
+.lista__link a:hover{
+    color: var(--botao-azul);
+}
+
+/*
+elmento:propriedade
+propriedade:
+-focus: é aplicado quando o elemento está em foco
+-hover: quando o usuario está com o mouse em cima
+-active: quando o elemento está ativo por exemplo o link está sendo clicado
+-visited: quando o elemento já foi visitado
+-link: detecta quando é um link que nunca foi clicado antes
+*/
+
+.lista__link a:active{/*quando ele tiver ativo*/
+    color: purple;
+}
+
+.rodape__texto{
+    margin: 1em 3em;
+}
+
